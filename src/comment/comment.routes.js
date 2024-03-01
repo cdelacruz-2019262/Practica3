@@ -7,7 +7,7 @@ const api = Router();
 api.get('/test', test)
 api.post('/save', [validateJwt], save)
 api.put('/update/:id', [validateJwt], update)
-api.delete('/delete/:id', erase)
+api.delete('/delete/:id', [validateJwt], erase)
 
 
 export default api
