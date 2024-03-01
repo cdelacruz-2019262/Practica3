@@ -19,24 +19,39 @@ export const save = async (req, res) => {
     }
 }
 
-export const update = async (req, res) => {
-    try {
-        let { id } = req.params
+export const update = async(req, res)=>{
+    try{   
         let data = req.body
-        let user = req.publication.user
-        if (data.user != user) {
-            return res.send({ message: 'you can only update your account' })
-        }
+        let { id } = req.params 
         let updatedPublication = await Publication.findOneAndUpdate(
-            { _id: id },
+            {_id: id},
             data,
-            { new: true }
-        ).populate('user', ['name', 'username'])
-        if (!updatedPublication) return res.status(401).send({ message: 'User not found and not updated' })
-        return res.send({ message: 'Updated publication', updatedPublication })
+            {new: true}
+        ).populate({
+            path: 'user',
+            select: 'username',
+        })
+        //Validar la actualización
+        if(!updatedPublication) return res.status(401).send({message: 'Publication not found and not updated'})
+        //Respondo al usuario
+        return res.send({message: 'Updated user', updatedPublication})
     }catch(err){
         console.error(err)
-        if(err.keyValue.username) return res.status(400).send({message: `Username ${err.keyValue.username} is alredy taken`})
-        return res.status(500).send({message: 'Error updating account'})
+        return res.status(500).send({message: 'Error updating publication'})
+    }
+}
+
+export const erase = async(req, res)=>{
+    try{
+        let { id } = req.params
+        let deletedPublication = await Publication.deleteOne({_id: id})
+        
+        //Validar que se eliminó
+        if(deletedPublication.deletedCount === 0) return res.status(404).send({message: 'publication not found and not deleted'})
+        //Responder
+        return res.send({message: 'Deleted publication successfully'})
+    }catch(err){
+        console.error(err)
+        return res.status(404).send({message: 'Error deleting publication'})
     }
 }

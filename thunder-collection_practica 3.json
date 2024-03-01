@@ -1,0 +1,411 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "practica 3",
+    "dateExported": "2024-03-01T23:45:50.801Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-01T23:41:02.280Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f03772dc-2c68-4ce4-be7b-6ce83aab06e2",
+            "name": "publications",
+            "containerId": "",
+            "created": "2024-03-01T23:42:21.635Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bcc50486-6c2a-442f-ac2b-ae08e3b50008",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-03-01T23:44:57.638Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "faed7c55-32dd-4ef0-a4b9-fbb31bfdd4f8",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "f03772dc-2c68-4ce4-be7b-6ce83aab06e2",
+            "name": "register post",
+            "url": "/publication/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T20:49:02.287Z",
+            "modified": "2024-03-01T22:42:34.718Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e23feb4c6340c62a00fd41"
+                    },
+                    {
+                        "name": "title",
+                        "value": "CALOR"
+                    },
+                    {
+                        "name": "post",
+                        "value": "COMO PUEDE HACER TANTO CALOR"
+                    },
+                    {
+                        "name": "category",
+                        "value": "OPINION"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "74e68803-8011-48d6-a38f-0e4e49bf7562",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "bcc50486-6c2a-442f-ac2b-ae08e3b50008",
+            "name": "save comment",
+            "url": "/comment/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T23:00:57.506Z",
+            "modified": "2024-03-01T23:08:39.935Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65e23feb4c6340c62a00fd41"
+                    },
+                    {
+                        "name": "post",
+                        "value": "exageras un poco"
+                    },
+                    {
+                        "name": "publication",
+                        "value": "65e259dad03ebc9b6ce533ca"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "12eb4fa5-0f9e-4eb9-b0cc-3bd5a6089abf",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "test user",
+            "url": "/user/test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T23:41:14.831Z",
+            "modified": "2024-03-01T23:41:14.831Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e746d49b-7942-476e-8afb-e75ad879a437",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "bcc50486-6c2a-442f-ac2b-ae08e3b50008",
+            "name": "test comment",
+            "url": "/comment/test",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T20:49:02.286Z",
+            "modified": "2024-03-01T22:59:58.878Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2c969d2e-7af1-4194-967c-7e3f5dbbad9e",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "f03772dc-2c68-4ce4-be7b-6ce83aab06e2",
+            "name": "update post",
+            "url": "/publication/update/65e259dad03ebc9b6ce533ca",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-01T23:29:38.462Z",
+            "modified": "2024-03-01T23:29:38.462Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Calor"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "215e2103-fc88-419c-817f-1fe84e8a0959",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "bcc50486-6c2a-442f-ac2b-ae08e3b50008",
+            "name": "update comment",
+            "url": "/comment/update/65e25ff7b29f8a780ce8aedd",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T20:49:02.288Z",
+            "modified": "2024-03-01T23:34:08.706Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "post",
+                        "value": "aqui hace frio"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "119c9225-d5e1-4120-beaf-f8faf5e82b97",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "f03772dc-2c68-4ce4-be7b-6ce83aab06e2",
+            "name": "delete post",
+            "url": "/publication/delete/65e259fad03ebc9b6ce533cd",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-01T23:40:04.367Z",
+            "modified": "2024-03-01T23:40:04.367Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos Fernando",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3447e385-f666-4f8a-bc4b-1632521895ec",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "register user",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T23:41:21.973Z",
+            "modified": "2024-03-01T23:41:21.973Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "de la cruz"
+                    },
+                    {
+                        "name": "username",
+                        "value": "cdlc"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cdlc@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "06d1ea0e-82e2-4faa-8374-496cedc41ce4",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "bcc50486-6c2a-442f-ac2b-ae08e3b50008",
+            "name": "delete comment",
+            "url": "/comment/delete/65e2612a6c802e153163b0dd",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-01T20:49:02.290Z",
+            "modified": "2024-03-01T23:40:27.412Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyM2ZlYjRjNjM0MGM2MmEwMGZkNDEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTMyNjMyNCwiZXhwIjoxNzA5MzM3MTI0fQ.0sBa4KzNWY6XcK6D9BqjOGF_uSZVBaZdPqkRNaPDRZE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos Fernando",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d6b7b67-6ecd-43e2-8b31-5b565c1b8b82",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "update user",
+            "url": "/user/update/65e148ed4589aaf4cc1c3bfa",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T23:41:24.280Z",
+            "modified": "2024-03-01T23:41:24.280Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxNDhlZDQ1ODlhYWY0Y2MxYzNiZmEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTI3MDQ3NiwiZXhwIjoxNzA5MjgxMjc2fQ.IWzVMenumsDQY7afRj1k61jkbp_gf77_iwrlvnbgCGI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos Fernando"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a63626fc-2ef8-41a5-b47f-0a63f09ef3cb",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "login ",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-01T23:41:26.031Z",
+            "modified": "2024-03-01T23:41:26.032Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "carlos",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "de la cruz",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "username",
+                        "value": "cdlc"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cdlc@gmail.com",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2433dd99-7c21-4d35-950b-b33079dda929",
+            "colId": "346b6d3d-564a-41db-bd8f-7be5f28ab666",
+            "containerId": "9a00a33c-7e62-472d-ada8-ef2cb52de865",
+            "name": "delete user",
+            "url": "/user/delete/65e148ed4589aaf4cc1c3bfa",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-01T23:41:27.766Z",
+            "modified": "2024-03-01T23:41:27.766Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxNDhlZDQ1ODlhYWY0Y2MxYzNiZmEiLCJ1c2VybmFtZSI6ImNkbGMiLCJlbWFpbCI6ImNkbGNAZ21haWwuY29tIiwibmFtZSI6ImNhcmxvcyIsImlhdCI6MTcwOTI3MDQ3NiwiZXhwIjoxNzA5MjgxMjc2fQ.IWzVMenumsDQY7afRj1k61jkbp_gf77_iwrlvnbgCGI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos Fernando",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}

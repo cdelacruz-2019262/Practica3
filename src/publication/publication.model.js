@@ -15,7 +15,7 @@ const publicationSchema = Schema({
         enum: ['SUGGESTION', 'OPINION', 'QUESTION', 'HUMOR' ],
         required: true
     },
-    publication: {
+    post: {
         type: String,
         required: true
     }

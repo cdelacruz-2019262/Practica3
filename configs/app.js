@@ -7,6 +7,7 @@ import helmet from 'helmet'
 import cors from 'cors'
 import userRoutes from '../src/user/user.routes.js'
 import publicationRoutes from '../src/publication/publication.routes.js'
+import commentRoutes from '../src/comment/comment.routes.js'
 
 //configs
 const app = express()
@@ -23,6 +24,7 @@ app.use(morgan('dev'))
 //declaracion de rutas
 app.use('/user', userRoutes)
 app.use('/publication', publicationRoutes)
+app.use('/comment', commentRoutes)
 
 //levantar el server(revisar que si prende)
 export const initServer = ()=>{
